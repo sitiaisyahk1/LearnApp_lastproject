@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/third_layout">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/onboarding_slide1_title"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0.02"
+        android:textColor="@color/blackP"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/introImage"
+        app:layout_constraintTop_toBottomOf="@+id/introImage" />
+
+    <ImageView
+        android:id="@+id/introImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ilust_onboarding1" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/onboarding_slide1_desc"
+        android:fontFamily="@font/montserrat_medium"
+        android:letterSpacing="0.02"
+        android:textSize="14sp"
+        android:textColor="@color/blackP"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

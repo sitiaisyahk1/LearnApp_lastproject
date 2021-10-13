@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Learn App</string>
+    <string name="textsplash1">You Have to Be</string>
+    <string name="textsplash2">Expert!</string>
+    <string name="splashlogo">Logo Splash</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_webcategory">Web</string>
+    <string name="txt_modules">10 Modules</string>
+    <string name="txt_mobilecategory">" Mobile"</string>
+    <string name="txt_uiuxcategory">UI/UX</string>
+    <string name="txt_diniyahcategory">Diniyah</string>
+    <string name="txt_bkcategory">BK</string>
+    <string name="titl_newesttask">NEWEST TASK</string>
+    <string name="titl_category">CATEGORY</string>
+    <string name="home">Home</string>
+    <string name="rank">Ranking</string>
+    <string name="accounts">Account</string>
+
+    <string name="onboarding_slide1_title">Improving the quality of learning</string>
+    <string name="onboarding_slide2_title">Learn to manage tasks and keeps the focus</string>
+    <string name="onboarding_slide3_title">Login to your account</string>
+
+    <string name="onboarding_slide1_desc">Increase your effectiveness and quality for the better.</string>
+    <string name="onboarding_slide2_desc">Plan your learning activities and manage your tasks well.</string>
+    <string name="onboarding_slide3_desc">Plan your learning activities and manage your tasks well.</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get started</string>
+    <string name="invalid_username">Invalid Username</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="titl_beststudent">BEST STUDENTS</string>
+    <string name="titl_topstudent">TOP STUDENTS</string>
+</resources>

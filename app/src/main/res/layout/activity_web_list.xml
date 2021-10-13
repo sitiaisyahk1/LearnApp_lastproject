@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8FB"
+    tools:context=".home.modules.WebListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.meetsl.scardview.SCardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FDFEFF"
+            app:cardCornerRadius="8dp"
+            app:cardCornerVisibility="none"
+            app:cardElevation="8dp"
+            app:cardLightDirection="none"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCornerArea="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <carbon.widget.SearchEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:hint="search here"
+                    android:letterSpacing="0.02"
+                    android:textColor="@color/blackP"
+                    android:textColorHighlight="@color/blackP"
+                    android:textColorHint="@color/unselected_icon"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_serach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_search" />
+
+            </LinearLayout>
+
+        </com.meetsl.scardview.SCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_listmodules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

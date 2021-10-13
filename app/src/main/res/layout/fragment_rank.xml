@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RankFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titl_beststudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:letterSpacing="0.02"
+            android:text="@string/titl_beststudent"
+            android:textColor="@color/blackP"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="see more"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/titl_beststudents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titl_beststudents" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_beststudents"
+            android:layout_width="409dp"
+            android:layout_height="200dp"
+            tools:itemCount="3"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titl_beststudents" />
+
+        <TextView
+            android:id="@+id/titl_topstudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:letterSpacing="0.02"
+            android:text="@string/titl_topstudent"
+            android:textColor="@color/blackP"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/titl_beststudents"
+            app:layout_constraintTop_toBottomOf="@+id/rv_beststudents" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="see more"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/titl_topstudents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titl_topstudents"
+            tools:ignore="DuplicateIds" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_topstudents"
+            android:layout_width="409dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titl_topstudents" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
