@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,36 +15,42 @@
         <com.meetsl.scardview.SCardView
             android:id="@+id/cv1"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:background="#FDFEFF"
-            app:cardCornerRadius="8dp"
+            app:cardElevation="12dp"
+            app:cardShadowStartColor="#50EAECEF"
+            app:cardShadowEndColor="#50FFFFFF"
+            app:cardCornerRadius="4dp"
             app:cardCornerVisibility="none"
-            app:cardElevation="8dp"
             app:cardLightDirection="none"
-            app:cardPreventCornerOverlap="false"
-            app:cardUseCornerArea="false">
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCornerArea="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <carbon.widget.SearchEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_search"
-                    android:layout_width="310dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:hint="search here"
                     android:letterSpacing="0.02"
+                    android:textColorLink="@color/blackP"
                     android:textColor="@color/blackP"
                     android:textColorHighlight="@color/blackP"
                     android:textColorHint="@color/unselected_icon"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
 
                 <ImageButton
                     android:id="@+id/btn_serach"
@@ -52,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_search" />
 
@@ -60,13 +67,12 @@
         </com.meetsl.scardview.SCardView>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_listmodules"
+            android:id="@+id/rv_listmodules_web"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="24dp"/>
+            tools:listitem="@layout/item_list_module"
+            android:layout_marginTop="4dp"/>
 
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>

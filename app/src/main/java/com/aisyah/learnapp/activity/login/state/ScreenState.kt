@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.login.state
+package com.aisyah.learnapp.activity.login.state
 
 sealed class ScreenState<out T> {
     object Loading : ScreenState<Nothing>()

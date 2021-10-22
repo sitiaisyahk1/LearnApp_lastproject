@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.task.DetailTaskActivity">
+
+    <TextView
+        android:id="@+id/titl_listtask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="ASSIGMENT TASK :"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="@color/blackP"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_detailtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Microblog Adab"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titl_listtask1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="#EDEDED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_detailtask" />
+
+    <TextView
+        android:id="@+id/titl_detailtask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Description :"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="@color/blackP"
+        android:letterSpacing="0.02"
+        app:layout_constraintStart_toStartOf="@+id/titl_listtask1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tv_desc_detailtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:letterSpacing="0.03"
+        android:textColor="#979797"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titl_detailtask1" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/img_detailtask1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#F1F1F1"
+        app:carbon_cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_detailtask" />
+
+    <com.meetsl.scardview.SCardView
+        android:id="@+id/btn_upload_task"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#60FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardCornerVisibility="noRightCorner"
+        app:cardElevation="12dp"
+        app:cardMaxElevation="2dp"
+        app:cardShadowEndColor="#50FFFFFF"
+        app:cardShadowStartColor="#50FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/img_detailtask1"
+        app:layout_constraintEnd_toEndOf="@+id/img_detailtask1"
+        app:layout_constraintStart_toStartOf="@+id/img_detailtask1"
+        app:layout_constraintTop_toTopOf="@+id/img_detailtask1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_upload" />
+
+    </com.meetsl.scardview.SCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

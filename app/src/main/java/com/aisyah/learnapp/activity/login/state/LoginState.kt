@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.login.state
+package com.aisyah.learnapp.activity.login.state
 
 enum class LoginState {
     SUCCESS,

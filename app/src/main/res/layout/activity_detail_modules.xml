@@ -7,13 +7,162 @@
     android:background="#F6F8FB"
     tools:context=".home.DetailModulesActivity">
 
-    <ImageView
+    <carbon.widget.ImageView
         android:id="@+id/iv_detail_module"
-        android:layout_width="400dp"
-        android:layout_height="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:carbon_cornerRadius="15dp"
+        app:carbon_elevation="2dp"
+        android:background="@drawable/imgw2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/img_detail"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_bookmark_off"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_category_module"
+        app:layout_constraintStart_toStartOf="@+id/iv_detail_module"
+        app:layout_constraintTop_toTopOf="@+id/tv_category_module" />
+
+    <TextView
+        android:id="@+id/tv_category_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_categorymodule"
+        app:layout_constraintStart_toEndOf="@+id/btn_bookmark"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_module" />
+
+    <TextView
+        android:id="@+id/tv_date_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26 Agust 2021"
+        android:textColor="#979797"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_category_module"
+        app:layout_constraintEnd_toEndOf="@+id/iv_detail_module"
+        app:layout_constraintTop_toTopOf="@+id/tv_category_module" />
+
+    <TextView
+        android:id="@+id/tv_title_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:letterSpacing="0.01"
+        android:text="Android Development : Retrofit With Kotlin"
+        android:textColor="@color/blackP"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category_module" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="#EDEDED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_module" />
+
+    <TextView
+        android:id="@+id/tv_desc_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Many apps use your mobile phone’s internet connection to get data. On Android, the primary way that apps get and post data over the internet is with a library called Retrofit. This course shows you how to use Retrofit with idiomatic Kotlin code that you can apply directly to your Android app. Instructor Rahul Pandey covers everything you need to know to build rich, networked Android apps. Rahul starts with helping you understand APIs and their uses. He explains concurrency, coroutines in Kotlin, and how both can benefit your app."
+        android:textColor="#979797"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="3dp"
+        android:justificationMode="inter_word"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="#EDEDED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_module" />
+
+    <TextView
+        android:id="@+id/titl_linkmodule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Link Module :"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/blackP"
+        android:letterSpacing="0.02"
+        app:layout_constraintStart_toStartOf="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/bg_link"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:background="#ECEFF1"
+        app:carbon_cornerRadius="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ic_link"
+        app:layout_constraintTop_toBottomOf="@+id/titl_linkmodule" />
+
+    <ImageView
+        android:id="@+id/ic_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_link"
+        app:layout_constraintStart_toStartOf="@+id/titl_linkmodule"
+        app:layout_constraintTop_toTopOf="@+id/bg_link"
+        app:srcCompat="@drawable/ic_link" />
+
+    <TextView
+        android:id="@+id/tv_link_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="https://bit.ly/3kubKu4"
+        android:textSize="14sp"
+        android:textColor="@color/blackP"
+        android:linksClickable="true"
+        android:textColorLink="@color/blackP"
+        android:autoLink="web"
+        android:fontFamily="@font/montserrat_semi_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_link"
+        app:layout_constraintStart_toStartOf="@+id/bg_link"
+        app:layout_constraintTop_toTopOf="@+id/bg_link" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

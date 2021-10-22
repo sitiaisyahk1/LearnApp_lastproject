@@ -1,15 +1,14 @@
-package com.aisyah.learnapp.login
+package com.aisyah.learnapp.activity.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Html
 import androidx.lifecycle.ViewModelProviders
 import com.aisyah.learnapp.MainActivity
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.login.state.LoginState
-import com.aisyah.learnapp.login.state.ScreenState
-import com.aisyah.learnapp.login.viewmodel.LoginViewModel
+import com.aisyah.learnapp.activity.login.state.LoginState
+import com.aisyah.learnapp.activity.login.state.ScreenState
+import com.aisyah.learnapp.activity.login.viewmodel.LoginViewModel
 import com.aisyah.learnapp.onboarding.AppPrefs
 import com.aisyah.learnapp.onboarding.OnBoardingActivity
 import com.aisyah.learnapp.onboarding.hide

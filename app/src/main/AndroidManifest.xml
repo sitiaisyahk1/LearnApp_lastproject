@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnApp">
         <activity
+            android:name=".home.task.DetailTaskActivity"
+            android:exported="true" />
+        <activity
             android:name=".home.modules.WebListActivity"
             android:exported="true" />
         <activity
             android:name=".home.DetailModulesActivity"
             android:exported="true" />
         <activity
-            android:name=".login.LoginActivity"
+            android:name="com.aisyah.learnapp.activity.login.LoginActivity"
             android:exported="true" />
         <activity
             android:name=".onboarding.OnBoardingActivity"

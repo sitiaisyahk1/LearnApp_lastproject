@@ -1,12 +1,12 @@
-package com.aisyah.learnapp.login.viewmodel
+package com.aisyah.learnapp.activity.login.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.aisyah.learnapp.login.LoginInteractor
-import com.aisyah.learnapp.login.state.LoginState
-import com.aisyah.learnapp.login.state.ScreenState
+import com.aisyah.learnapp.activity.login.LoginInteractor
+import com.aisyah.learnapp.activity.login.state.LoginState
+import com.aisyah.learnapp.activity.login.state.ScreenState
 
 class LoginViewModel(private val loginInteractor: LoginInteractor) : ViewModel(),
     LoginInteractor.OnLoginFinishedListener {

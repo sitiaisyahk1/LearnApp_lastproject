@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".login.LoginActivity">
+        tools:context=".activity.login.LoginActivity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -76,8 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
-                android:maxLength="22"
-                android:maxLines="1"
+                android:singleLine="true"
                 android:textColor="@color/blackP"
                 android:textColorHighlight="@color/unselected_icon"
                 android:textColorHint="@color/unselected_icon"
@@ -108,15 +107,25 @@
                 android:password="true" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <ImageButton
+        <carbon.widget.TextView
             android:id="@+id/loginBtn"
-            android:layout_width="340dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
-            android:background="@drawable/btn_login"
+            android:background="@drawable/btn_bg"
+            android:elevation="15dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:shadowColor="@color/blue"
+            android:shadowRadius="100"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            app:carbon_elevationSpotShadowColor="@color/blue"
+            app:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

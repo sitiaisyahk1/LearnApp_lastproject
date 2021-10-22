@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.login
+package com.aisyah.learnapp.activity.login
 
 import com.aisyah.learnapp.onboarding.postDelayed
 

@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.login.LoginActivity
+import com.aisyah.learnapp.activity.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
 class OnBoardingActivity : AppCompatActivity() {
