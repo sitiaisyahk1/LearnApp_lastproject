@@ -32,6 +32,14 @@
     <string name="invalid_password">Invalid Password</string>
     <string name="titl_beststudent">BEST STUDENTS</string>
     <string name="titl_topstudent">TOP STUDENTS</string>
+    <string name="titl_about_app">"The application is in the form of repetition of material or can be said to have the same features as the application with Google Classroom, and this murojaah application is devoted to IT schools such as IDN. /n
+        An example of an application flow is if a teacher has online materials or documents in the form of lessons (IT, Diniyah, etc.) that can be displayed or uploaded to the muroja'ah application. For example, a month will study material in the form of IT,/n
+        which in the first week will learn basic Kotlin, then in the second week will learn Kotlin fundamentals (mvvm, mvp), then in the third week will learn (data binding), and in the last week will learn (dependency injection). /n
+        The material provided is in the form of online material so that in the second week the material from the first week (kotlin basic) will be uploaded/already available in the 'first-week’ material list application. /n
+        Then also, when it is in the third week, the materials in the second and first weeks are available on the list of materials. The main function of this muroja'ah application is to make students become ambitious and passionate about studying IT, Diniyah, English, etc. /n
+        In this way, if a student is active in reviewing the material again and is consistent and punctual in doing the given task, the application will give points (could be in the form of points for additional grades or the like/could be in the form of rewards) to students who are active in learning, /n
+        especially in reviewing material. given by the teacher and active/consistent in collecting assignments. With additional points, a student will compete to maintain his knowledge and can always remember the material that has been given. /n
+        The application will track users every time they open the previous material and how active they are in learning. The points in question can be in the form of additional points, or certificates, or can also be adjusted to the wishes of the school."</string>
 
     //List Modules
     <string-array name="lable_web_modules">
