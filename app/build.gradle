@@ -45,9 +45,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
-    implementation 'com.android.support:support-v4:28.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -74,7 +72,6 @@ dependencies {
     //image
     implementation 'com.github.bumptech.glide:glide:4.12.0' //untuk setting image
     implementation 'de.hdodenhof:circleimageview:3.1.0' //biar image nya bulat
-    implementation 'com.squareup.picasso:picasso:2.71828' //semacam glide untuk setting gambar
 
     // Recyclerview
     implementation 'androidx.recyclerview:recyclerview:1.2.1'

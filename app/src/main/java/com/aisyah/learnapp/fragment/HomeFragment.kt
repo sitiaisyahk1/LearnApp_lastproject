@@ -19,14 +19,14 @@ class HomeFragment : Fragment() {
 
     private lateinit var taskAdapter: ListTaskAdapter
 
-    companion object {
-        fun defaultFragment() : HomeFragment {
-            val fragment = HomeFragment()
-            val bundle = Bundle()
-            fragment.arguments = bundle
-            return fragment
-        }
-    }
+//    companion object {
+//        fun defaultFragment() : HomeFragment {
+//            val fragment = HomeFragment()
+//            val bundle = Bundle()
+//            fragment.arguments = bundle
+//            return fragment
+//        }
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

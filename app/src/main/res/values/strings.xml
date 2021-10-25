@@ -40,8 +40,8 @@
         In this way, if a student is active in reviewing the material again and is consistent and punctual in doing the given task, the application will give points (could be in the form of points for additional grades or the like/could be in the form of rewards) to students who are active in learning, /n
         especially in reviewing material. given by the teacher and active/consistent in collecting assignments. With additional points, a student will compete to maintain his knowledge and can always remember the material that has been given. /n
         The application will track users every time they open the previous material and how active they are in learning. The points in question can be in the form of additional points, or certificates, or can also be adjusted to the wishes of the school."</string>
+    <string name="btn_account">btn_account</string>
 
-    //List Modules
     <string-array name="lable_web_modules">
         <item>WEB - FIRYAL</item>
         <item>WEB - FIRYAL</item>
