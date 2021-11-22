@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.AccountFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.AccountFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +41,7 @@
                     android:text="Username"
                     android:fontFamily="@font/montserrat_bold"
                     android:textAlignment="center"
-                    android:textColor="@color/blackP"
+                    android:textColor="@color/textMainColor"
                     android:letterSpacing="0.02"
                     android:textSize="20sp"/>
 
@@ -64,7 +65,7 @@
                 android:textAlignment="center"
                 android:maxLines="3"
                 android:letterSpacing="0.02"
-                android:textColor="@color/unselected_icon"
+                android:textColor="@color/grayTextColor"
                 android:fontFamily="@font/montserrat_medium"
                 android:layout_gravity="center"
                 android:layout_marginTop="18dp"/>
@@ -75,7 +76,7 @@
                 android:text="Your Project :"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:textSize="18sp"
-                android:textColor="@color/blackP"
+                android:textColor="@color/textMainColor"
                 android:layout_gravity="center"
                 android:letterSpacing="0.02"/>
 
@@ -92,14 +93,14 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:defaultFocusHighlightEnabled="true"
-                    app:cardBackgroundColor="@android:color/white"
+                    app:cardBackgroundColor="@color/backgroundMainColor"
                     app:cardCornerRadius="10dp"
                     app:cardCornerVisibility="none"
                     app:cardElevation="5dp"
                     app:cardLightDirection="none"
                     app:cardPreventCornerOverlap="false"
-                    app:cardShadowEndColor="#0333B5E5"
-                    app:cardShadowStartColor="#E8E9EC"
+                    app:cardShadowEndColor="@color/backgroundMainColor"
+                    app:cardShadowStartColor="@color/backgroundMainColor"
                     app:cardUseCompatPadding="false"
                     app:cardUseCornerArea="false">
 
@@ -119,7 +120,7 @@
                     android:defaultFocusHighlightEnabled="true"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    app:cardBackgroundColor="@android:color/white"
+                    app:cardBackgroundColor="@color/backgroundMainColor"
                     app:cardCornerRadius="10dp"
                     app:cardCornerVisibility="none"
                     app:cardElevation="5dp"
@@ -144,7 +145,7 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:defaultFocusHighlightEnabled="true"
-                    app:cardBackgroundColor="@android:color/white"
+                    app:cardBackgroundColor="@color/backgroundMainColor"
                     app:cardCornerRadius="10dp"
                     app:cardCornerVisibility="none"
                     app:cardElevation="5dp"
@@ -200,7 +201,7 @@
                 android:text="Setting"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:textSize="16sp"
-                android:textColor="@color/blackP"
+                android:textColor="@color/textMainColor"
                 android:letterSpacing="0.02"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"/>
@@ -208,7 +209,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cv2"
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="230dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
@@ -243,7 +244,7 @@
                             android:layout_marginEnd="16dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="About App"
-                            android:textColor="@color/blackP"
+                            android:textColor="@color/textMainColor"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -253,7 +254,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
-                        android:background="#E9E9E9" />
+                        android:background="@color/lineMainColor" />
 
                     <LinearLayout
                         android:id="@+id/btn_bookmarkmodules"
@@ -277,7 +278,7 @@
                             android:layout_marginEnd="16dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Bookmark Modules"
-                            android:textColor="@color/blackP"
+                            android:textColor="@color/textMainColor"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -287,7 +288,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
-                        android:background="#E9E9E9" />
+                        android:background="@color/lineMainColor" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -311,8 +312,37 @@
                             android:layout_marginEnd="16dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Favorite Students"
-                            android:textColor="@color/blackP"
+                            android:textColor="@color/textMainColor"
                             android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/lineMainColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:id="@+id/btn_darkmode">
+
+                        <Switch
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Enable dark mode"
+                            android:textColor="@color/textMainColor"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:drawablePadding="@dimen/_16dp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -325,7 +355,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="40dp"
-                android:background="@color/white"
+                android:background="@color/backgroundMainColor"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:text="Log Out"
                 android:shadowColor="@color/blackP"
@@ -335,4 +365,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</androidx.core.widget.NestedScrollView>
+</ScrollView>

@@ -30,7 +30,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:letterSpacing="0.03"
             android:text="Welcome Back"
-            android:textColor="@color/blackP"
+            android:textColor="@color/textMainColor"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -43,7 +43,7 @@
             android:fontFamily="@font/montserrat_regular"
             android:letterSpacing="0.03"
             android:text="Make sure you get login access from the admin"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/grayTextColor"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/titl_login"
             app:layout_constraintTop_toBottomOf="@+id/titl_login" />

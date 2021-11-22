@@ -9,6 +9,7 @@
         android:id="@+id/i"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/backgroundMainColor"
         app:cardCornerRadius="12dp"
         app:cardElevation="12dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +41,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:maxLines="1"
                 android:text="Kevin Seith"
-                android:textColor="@color/blackP"
+                android:textColor="@color/textMainColor"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_top_student"
                 app:layout_constraintTop_toTopOf="@+id/iv_top_student" />

@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.fragment
+package com.aisyah.learnapp.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

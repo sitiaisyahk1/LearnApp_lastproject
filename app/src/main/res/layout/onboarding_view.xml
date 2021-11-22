@@ -14,7 +14,7 @@
         android:text="@string/onboarding_slide1_title"
         android:fontFamily="@font/montserrat_bold"
         android:letterSpacing="0.02"
-        android:textColor="@color/blackP"
+        android:textColor="@color/textMainColor"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/introImage"
         app:layout_constraintTop_toBottomOf="@+id/introImage" />
@@ -38,7 +38,7 @@
         android:fontFamily="@font/montserrat_medium"
         android:letterSpacing="0.02"
         android:textSize="14sp"
-        android:textColor="@color/blackP"
+        android:textColor="@color/textMainColor"
         app:layout_constraintStart_toStartOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 

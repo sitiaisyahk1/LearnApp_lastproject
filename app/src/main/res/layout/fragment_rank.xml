@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RankFragment">
+    tools:context=".ui.fragment.RankFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:letterSpacing="0.02"
             android:text="@string/titl_beststudent"
-            android:textColor="@color/blackP"
+            android:textColor="@color/textMainColor"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +55,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:letterSpacing="0.02"
             android:text="@string/titl_topstudent"
-            android:textColor="@color/blackP"
+            android:textColor="@color/textMainColor"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/titl_beststudents"
             app:layout_constraintTop_toBottomOf="@+id/rv_beststudents" />

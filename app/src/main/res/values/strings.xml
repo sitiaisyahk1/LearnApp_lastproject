@@ -41,6 +41,12 @@
         especially in reviewing material. given by the teacher and active/consistent in collecting assignments. With additional points, a student will compete to maintain his knowledge and can always remember the material that has been given. /n
         The application will track users every time they open the previous material and how active they are in learning. The points in question can be in the form of additional points, or certificates, or can also be adjusted to the wishes of the school."</string>
     <string name="btn_account">btn_account</string>
+    <string name="imagebutton">imagebutton</string>
+    <string name="titl_label">Android</string>
+    <string name="titl_date">26 Agust 2021</string>
+    <string name="titl_module">Android Development : Retrofit With Kotlin</string>
+    <string name="imageview">imageview</string>
+    <string name="titl_linkmodule">Link Module :</string>
 
     <string-array name="lable_web_modules">
         <item>WEB - FIRYAL</item>

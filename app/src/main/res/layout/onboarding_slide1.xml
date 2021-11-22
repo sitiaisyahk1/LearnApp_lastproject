@@ -25,7 +25,7 @@
         android:letterSpacing="0.002"
         android:lineHeight="32dp"
         android:text="@string/onboarding_slide1_title"
-        android:textColor="@color/blackP"
+        android:textColor="@color/textMainColor"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img" />
@@ -38,7 +38,7 @@
         android:fontFamily="@font/montserrat_medium"
         android:letterSpacing="0.02"
         android:text="@string/onboarding_slide1_desc"
-        android:textColor="@color/blackP"
+        android:textColor="@color/textMainColor"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/titleTv"
         app:layout_constraintTop_toBottomOf="@+id/titleTv" />

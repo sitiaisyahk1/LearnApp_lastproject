@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.modules.WebListActivity">
+    tools:context=".home.modules.MobileListActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_listmodules_web"
+            android:id="@+id/rv_listmodules_mobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/item_list_module"/>

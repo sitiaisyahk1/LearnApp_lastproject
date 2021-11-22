@@ -32,7 +32,7 @@
             android:id="@+id/bubbleTabBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF"
+            android:background="@android:color/transparent"
             android:padding="7dp"
             app:bubbletab_menuResource="@menu/bottom_menu"
             app:bubbletab_custom_font="@font/montserrat_medium"

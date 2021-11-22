@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -7,14 +8,14 @@
     <com.meetsl.scardview.SCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FDFEFF"
+        android:background="@color/backgroundMainColor"
         app:cardCornerRadius="12dp"
         app:cardCornerVisibility="none"
         app:cardElevation="8dp"
         app:cardLightDirection="none"
         app:cardPreventCornerOverlap="true"
-        app:cardShadowEndColor="#50FFFFFF"
-        app:cardShadowStartColor="#50EAECEF"
+        app:cardShadowEndColor="@color/backgroundMainColor"
+        app:cardShadowStartColor="@color/backgroundMainColor"
         app:cardUseCornerArea="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,15 +43,15 @@
                 android:id="@+id/tv_category_task"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="9dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="ANDROID - FIRYAL"
-                android:textColor="@color/blackP"
+                android:textColor="@color/textMainColor"
                 android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/iv_weblist"
-                app:layout_constraintTop_toTopOf="@+id/iv_weblist" />
+                app:layout_constraintStart_toEndOf="@+id/iv_list_task"
+                app:layout_constraintTop_toTopOf="@+id/iv_list_task" />
 
             <TextView
                 android:id="@+id/tv_time_task"
@@ -59,7 +60,7 @@
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="26 Aug"
-                android:textColor="@color/unselected_icon"
+                android:textColor="@color/grayTextColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -69,38 +70,37 @@
                 android:id="@+id/tv_title_task"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="9dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:text="Retrofit with Kotlin"
-                android:maxLines="1"
                 android:letterSpacing="0.01"
-                android:textColor="@color/blackP"
+                android:maxLines="1"
+                android:text="Retrofit with Kotlin"
+                android:textColor="@color/textMainColor"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_weblist"
-                app:layout_constraintStart_toStartOf="@+id/tv_category_task" />
+                app:layout_constraintStart_toStartOf="@+id/tv_category_task"
+                app:layout_constraintTop_toBottomOf="@+id/tv_category_task" />
 
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:layout_marginStart="16dp"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginEnd="16dp"-->
-<!--                android:background="#EDEDED" />-->
+            <!--            <ImageView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:background="#EDEDED" />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_desc_web"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="16dp"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginEnd="16dp"-->
-<!--                android:layout_marginBottom="16dp"-->
-<!--                android:fontFamily="@font/montserrat_regular"-->
-<!--                android:letterSpacing="0.02"-->
-<!--                android:maxLines="2"-->
-<!--                android:text="This module explains how to use a retrofit library that serves to process data."-->
-<!--                android:textColor="#979797"-->
-<!--                android:textSize="10sp" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_desc_web"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                android:fontFamily="@font/montserrat_regular"-->
+            <!--                android:letterSpacing="0.02"-->
+            <!--                android:maxLines="2"-->
+            <!--                android:text="This module explains how to use a retrofit library that serves to process data."-->
+            <!--                android:textColor="#979797"-->
+            <!--                android:textSize="10sp" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

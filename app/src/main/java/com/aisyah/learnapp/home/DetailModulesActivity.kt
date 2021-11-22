@@ -2,27 +2,38 @@ package com.aisyah.learnapp.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.model.listweb.ModulesDetail
+import com.aisyah.learnapp.model.webmodule.ModelModule
+import kotlinx.android.synthetic.main.activity_detail_modules.*
+import kotlinx.android.synthetic.main.activity_detail_task.*
 
 class DetailModulesActivity : AppCompatActivity() {
-//    companion object{
-//        const val KEY_MODULES_WEB = "key_modules_web"
-//    }
-
-    private var model : ModulesDetail? = null
+    companion object{
+        const val EXTRA_MODULE = "extra_module"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_modules)
+        setSupportActionBar(toolbar_detail_web)
 
-//        model = intent.getParcelableExtra(KEY_MODULES_WEB)
-//
-//        tv_category_module.setText(model?.category)
-//        tv_date_module.setText(model?.date)
-//        tv_title_module.setText(model?.title)
-//        tv_desc_module.setText(model?.description)
-//        tv_link_module.setText(model?.linkModule)
-//        iv_detail_module.setImageResource(model?.img!!)
+        val module = intent.getParcelableExtra<ModelModule>(EXTRA_MODULE) as ModelModule
+
+        iv_detail_module.setImageResource(module.img)
+        tv_category_module.text = module.category
+        tv_date_module.text = module.date
+        tv_title_module.text = module.title
+        tv_desc_module.text = module.description
+        tv_link_module.text = module.linkModule
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> finish()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
 }

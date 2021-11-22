@@ -17,29 +17,34 @@
         app:srcCompat="@drawable/logosplash"
         android:contentDescription="@string/splashlogo" />
 
-    <TextView
-        android:id="@+id/txt_splash1"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="@string/textsplash1"
-        android:textColor="#676161"
-        android:textSize="12sp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/txt_splash2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/textsplash2"
-        android:textColor="#2F80ED"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txt_splash1"
-        app:layout_constraintStart_toEndOf="@+id/txt_splash1" />
+        <TextView
+            android:id="@+id/txt_splash1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/textsplash1"
+            android:textColor="@color/textMainColor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_splash2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/textsplash2"
+            android:textColor="#2F80ED"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

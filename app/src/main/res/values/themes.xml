@@ -14,4 +14,10 @@
         <!-- Customize your theme here. -->
 
     </style>
+    
+    <color name="textMainColor">#092134</color>
+    <color name="cardMainColor">#F0F0F0</color>
+    <color name="backgroundMainColor">#FFFFFF</color>
+    <color name="lineMainColor">#E9E9E9</color>
+    <color name="grayTextColor">#979797</color>
 </resources>

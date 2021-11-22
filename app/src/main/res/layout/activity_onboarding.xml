@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/white"
     tools:context=".onboarding.OnBoardingActivity">
     
     <androidx.viewpager.widget.ViewPager
@@ -62,7 +61,7 @@
         android:text="@string/skip"
         android:fontFamily="@font/montserrat_medium"
         android:textSize="14sp"
-        android:textColor="@color/blackP"
+        android:textColor="@color/textMainColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/nextBtn"
         app:layout_constraintStart_toStartOf="parent"
