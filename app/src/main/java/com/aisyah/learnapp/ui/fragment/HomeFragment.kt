@@ -2,6 +2,7 @@ package com.aisyah.learnapp.ui.fragment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,8 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.adapter.task.ListTaskAdapter
 import com.aisyah.learnapp.data.TaskData
-import com.aisyah.learnapp.home.modules.MobileListActivity
-import com.aisyah.learnapp.home.modules.WebListActivity
+import com.aisyah.learnapp.home.modules.*
 import com.aisyah.learnapp.model.listtask.ModelTask
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -40,19 +40,34 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        btn_uiuxcategory.setOnClickListener {
+            val intent = Intent(context, UiuxListActivity::class.java)
+            startActivity(intent)
+        }
+        btn_bkcategory.setOnClickListener {
+            val intent = Intent(context, BkListActivity::class.java)
+            startActivity(intent)
+        }
+        btn_diniyahcategory.setOnClickListener {
+            val intent = Intent(context, DiniyahListActivity::class.java)
+            startActivity(intent)
+        }
+
         initRecyclerView()
 
     }
 
 
     private fun initRecyclerView() {
-        val list : ArrayList<ModelTask> = arrayListOf()
+        val list : ArrayList<ModelTask> = TaskData.getListTask()
+        Log.d("terserahh", "$list")
         rv_task.setHasFixedSize(true)
-        list.addAll(TaskData.listDataTask)
         rv_task.layoutManager = LinearLayoutManager(context)
-        val listAdapter = ListTaskAdapter(list)
+        val listAdapter = ListTaskAdapter()
+        listAdapter.setTask(list)
         rv_task.adapter = listAdapter
     }
+
 
 
 }

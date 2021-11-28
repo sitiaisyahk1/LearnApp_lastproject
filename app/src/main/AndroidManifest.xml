@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnApp">
         <activity
+            android:name=".home.modules.DiniyahListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".home.modules.BkListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".home.modules.UiuxListActivity"
+            android:exported="true" />
+        <activity
             android:name=".home.modules.MobileListActivity"
             android:exported="true" />
         <activity
@@ -19,7 +28,7 @@
             android:name=".account.EditAccountActivity"
             android:exported="true" />
         <activity
-            android:name=".rank.DetailStudentActivity"
+            android:name=".student.DetailStudentActivity"
             android:exported="true" />
         <activity
             android:name=".home.task.DetailTaskActivity"
@@ -29,7 +38,8 @@
             android:exported="true" />
         <activity
             android:name=".home.DetailModulesActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.LearnApp" />
         <activity
             android:name=".activity.login.LoginActivity"
             android:exported="true" />

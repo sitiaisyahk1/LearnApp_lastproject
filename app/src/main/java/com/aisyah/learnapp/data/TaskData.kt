@@ -1,5 +1,6 @@
 package com.aisyah.learnapp.data
 
+import android.util.Log
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.model.listtask.ModelTask
 
@@ -53,23 +54,24 @@ object TaskData {
                 "5. Desain harus rapih dan dapat dibaca"
     )
     private val img = intArrayOf(
-        R.drawable.img_weblist,
-        R.drawable.imgw2,
-        R.drawable.imgw3,
-        R.drawable.imgw4,
-        R.drawable.imgw5
+        R.drawable.web4,
+        R.drawable.uiux2,
+        R.drawable.mobile4,
+        R.drawable.diniyah4,
+        R.drawable.diniyah2
     )
 
-    val listDataTask: ArrayList<ModelTask>
-    get() {
+    fun getListTask() : ArrayList<ModelTask> {
         val list = arrayListOf<ModelTask>()
-        for (position in title.indices) {
+        for (position in img.indices) {
             val task = ModelTask()
             task.img = img[position]
             task.category = category[position]
             task.title = title[position]
             task.time = time[position]
+            list.add(task)
         }
+        Log.d("cobabeda", "$list")
         return list
     }
 

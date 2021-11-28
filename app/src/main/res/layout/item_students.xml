@@ -5,13 +5,18 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.meetsl.scardview.SCardView
-        android:id="@+id/i"
-        android:background="@color/backgroundMainColor"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/carbon_grid8"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:background="@color/backgroundMainColor"
         app:cardCornerRadius="12dp"
-        app:cardElevation="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,12 +26,12 @@
             android:layout_height="match_parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/iv_top_student"
+                android:id="@+id/iv_best_student"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/img_profile"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,8 +48,8 @@
                 android:text="Kevin Seith"
                 android:textColor="@color/textMainColor"
                 android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/iv_top_student"
-                app:layout_constraintTop_toTopOf="@+id/iv_top_student" />
+                app:layout_constraintStart_toEndOf="@+id/iv_best_student"
+                app:layout_constraintTop_toTopOf="@+id/iv_best_student" />
 
             <TextView
                 android:id="@+id/tv_beston"
@@ -84,6 +89,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.meetsl.scardview.SCardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

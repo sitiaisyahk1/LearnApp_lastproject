@@ -1,7 +1,7 @@
 package com.aisyah.learnapp.data
 
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.model.webmodule.ModelModule
+import com.aisyah.learnapp.model.module.ModelModule
 
 object ModuleWebData {
     private val titleModule = arrayOf(
@@ -50,18 +50,18 @@ object ModuleWebData {
                 "Justin explains how to run console commands, add the ability to save images, work with the Laravel service container, write tests in Laravel, write and send emails using your app, and manage user authentication. These videos provide the information you need to make a move to Laravel and build high-quality, scalable, and sound PHP applications."
     )
     private val linkModule = arrayOf(
-        "link1",
-        "link2",
-        "link3",
-        "link4",
-        "link5"
+        "https://bit.ly/3FRM97o",
+        "https://bit.ly/311a9Wq",
+        "https://bit.ly/3p2Xf2x",
+        "https://bit.ly/318xo0A",
+        "https://bit.ly/3l9naED"
     )
     private val imgModule = intArrayOf(
-        R.drawable.img_weblist,
-        R.drawable.imgw2,
-        R.drawable.imgw3,
-        R.drawable.imgw4,
-        R.drawable.imgw5
+        R.drawable.web1,
+        R.drawable.web2,
+        R.drawable.web3,
+        R.drawable.web4,
+        R.drawable.web5
     )
 
     //Variable list data

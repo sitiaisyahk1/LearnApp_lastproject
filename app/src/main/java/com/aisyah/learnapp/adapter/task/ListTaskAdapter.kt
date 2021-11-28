@@ -11,11 +11,15 @@ import com.aisyah.learnapp.R
 import com.aisyah.learnapp.home.task.DetailTaskActivity
 import com.aisyah.learnapp.model.listtask.ModelTask
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
-import kotlinx.android.synthetic.main.item_list_task.view.*
 
-class ListTaskAdapter(private val listTask: ArrayList<ModelTask>) : RecyclerView.Adapter<ListTaskAdapter.ViewHolder>() {
+class ListTaskAdapter : RecyclerView.Adapter<ListTaskAdapter.ViewHolder>() {
+    private val listTask = arrayListOf<ModelTask>()
 
+    fun setTask (tasks : List<ModelTask>?) {
+        if (tasks == null) return
+        listTask.clear()
+        listTask.addAll(tasks)
+    }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var ivImage : ImageView = itemView.findViewById(R.id.iv_list_task)

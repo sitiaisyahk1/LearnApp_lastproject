@@ -11,7 +11,7 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/studentFragment"
-        android:name="com.aisyah.learnapp.ui.fragment.RankFragment"
+        android:name="com.aisyah.learnapp.ui.fragment.StudentFragment"
         android:label="fragment_students"
         tools:layout="@layout/fragment_rank" />
     <fragment

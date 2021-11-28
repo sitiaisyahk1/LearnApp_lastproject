@@ -1,7 +1,7 @@
 package com.aisyah.learnapp.data
 
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.model.webmodule.ModelModule
+import com.aisyah.learnapp.model.module.ModelModule
 
 object ModuleMobileData {
     private val title = arrayOf(
@@ -40,18 +40,18 @@ object ModuleMobileData {
         "Many apps use your mobile phones internet connection to get data. On Android, the primary way that apps get and post data over the internet is with a library called Retrofit. This course shows you how to use Retrofit with idiomatic Kotlin code that you can apply directly to your Android app. Instructor Rahul Pandey covers everything you need to know to build rich, networked Android apps. Rahul starts with helping you understand APIs and their uses. He explains concurrency, coroutines in Kotlin, and how both can benefit your app. Rahul steps you through getting started with an Android Retrofit project, as well as retrieving and sending data and handling authentication in your Android app. Finally, Rahul covers several advanced configuration options related to Retrofit."
     )
     private val linkModule = arrayOf(
-        "https://www.linkedin.com/learning/kotlin-essential-training",
-        "https://www.linkedin.com/learning/flutter-part-01-introduction",
-        "https://www.linkedin.com/learning/intermediate-kotlin-for-android-developers/",
-        "https://www.linkedin.com/learning/flutter-part-02-building-apps",
-        "https://www.linkedin.com/learning/android-development-retrofit-with-kotlin"
+        "https://bit.ly/3cSfpOL",
+        "https://bit.ly/3nZDk5q",
+        "https://bit.ly/3I2IHJ4",
+        "https://bit.ly/3cVtr24",
+        "https://bit.ly/2ZuOTb7"
     )
     private val img = intArrayOf(
-        R.drawable.img_weblist,
-        R.drawable.imgw2,
-        R.drawable.imgw3,
-        R.drawable.imgw4,
-        R.drawable.imgw5
+        R.drawable.mobile1,
+        R.drawable.mobile2,
+        R.drawable.mobile3,
+        R.drawable.mobile4,
+        R.drawable.mobile5
     )
 
     //Variable list data

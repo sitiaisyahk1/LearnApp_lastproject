@@ -36,7 +36,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/img_weblist"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 app:carbon_cornerRadius="8dp" />
 
             <LinearLayout

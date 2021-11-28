@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.model.webmodule
+package com.aisyah.learnapp.model.module
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

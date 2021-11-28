@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.RankFragment">
+    tools:context=".ui.fragment.StudentFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -40,8 +40,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_beststudents"
             android:layout_width="409dp"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             tools:itemCount="3"
+            tools:listitem="@layout/item_students"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
