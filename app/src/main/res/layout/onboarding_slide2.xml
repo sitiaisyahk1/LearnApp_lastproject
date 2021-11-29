@@ -11,33 +11,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/illust_onborading2" />
+        app:srcCompat="@drawable/illust_onborading2"
+        android:contentDescription="@string/imageview" />
 
     <TextView
         android:id="@+id/titleTv"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/_300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/_16dp"
         android:layout_marginTop="445dp"
         android:fontFamily="@font/montserrat_bold"
         android:letterSpacing="0.002"
-        android:lineHeight="32dp"
+        android:lineHeight="@dimen/_32dp"
         android:text="@string/onboarding_slide2_title"
-        android:textColor="@color/textMainColor"
-        android:textSize="24sp"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/_24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/img" />
 
     <TextView
         android:id="@+id/descTV"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/_300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/_8dp"
         android:fontFamily="@font/montserrat_medium"
         android:letterSpacing="0.02"
         android:text="@string/onboarding_slide2_desc"
-        android:textColor="@color/textMainColor"
-        android:textSize="14sp"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/_14sp"
         app:layout_constraintStart_toStartOf="@+id/titleTv"
         app:layout_constraintTop_toBottomOf="@+id/titleTv" />
 

@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.adapter.uiux
+package com.aisyah.learnapp.adapter.module.uiux
 
 import android.content.Intent
 import android.view.LayoutInflater

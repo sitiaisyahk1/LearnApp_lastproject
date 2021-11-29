@@ -1,298 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragment.HomeFragment">
 
-    <ImageView
-        android:id="@+id/btn_point"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:src="@drawable/ic_point_home"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_point"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="400"
-        android:textColor="@color/textMainColor"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_point"
-        app:layout_constraintStart_toEndOf="@+id/btn_point"
-        app:layout_constraintTop_toTopOf="@+id/btn_point" />
-
-    <ImageView
-        android:id="@+id/btn_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:src="@drawable/ic_notification"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/titl_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:letterSpacing="0.01"
-        android:text="@string/titl_category"
-        android:textColor="@color/textMainColor"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/btn_point"
-        app:layout_constraintTop_toBottomOf="@+id/btn_point" />
-
-    <HorizontalScrollView
-        android:id="@+id/scrollview"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:scrollbars="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titl_category">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:id="@+id/btn_webcategory"
+            <ImageView
+                android:id="@+id/btn_point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_webcategory"
-                android:orientation="vertical"
-                android:layout_marginStart="24dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_point_home"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_webcategory" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:letterSpacing="0.1"
-                    android:text="@string/txt_webcategory"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/txt_modules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/txt_modules"
-                    android:textColor="@color/white"
-                    android:textSize="12sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btn_mobilecategory"
+            <TextView
+                android:id="@+id/tv_point"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_mobilecategory"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="400"
+                android:textColor="@color/titleTextColor"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_point"
+                app:layout_constraintStart_toEndOf="@+id/btn_point"
+                app:layout_constraintTop_toTopOf="@+id/btn_point" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_mobilecategory" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:letterSpacing="0.1"
-                    android:text="@string/txt_mobilecategory"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/txt_modules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/txt_modules"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    tools:ignore="DuplicateIds" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btn_uiuxcategory"
+            <ImageView
+                android:id="@+id/btn_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/bg_uiuxcategory"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_mobilecategory" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:letterSpacing="0.1"
-                    android:text="@string/txt_uiuxcategory"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/txt_modules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/txt_modules"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    tools:ignore="DuplicateIds" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btn_diniyahcategory"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_diniyahcategory"
-                android:orientation="vertical"
-                android:layout_marginStart="12dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_diniyahcategory" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:letterSpacing="0.1"
-                    android:text="@string/txt_diniyahcategory"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/txt_modules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/txt_modules"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    tools:ignore="DuplicateIds" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/btn_bkcategory"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_bkcategory"
-                android:orientation="vertical"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
-                android:layout_marginStart="12dp">
+                android:src="@drawable/ic_notification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
+            <TextView
+                android:id="@+id/titl_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0.01"
+                android:text="@string/titl_category"
+                android:textColor="@color/titleTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/btn_point"
+                app:layout_constraintTop_toBottomOf="@+id/btn_point" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titl_category">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="4dp"
-                    android:src="@drawable/ic_bkcategory" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:letterSpacing="0.1"
-                    android:text="@string/txt_bkcategory"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    <LinearLayout
+                        android:id="@+id/btn_webcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:background="@drawable/bg_webcategory"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txt_modules"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text="@string/txt_modules"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    tools:ignore="DuplicateIds" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_webcategory" />
 
-            </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/txt_webcategory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
 
-        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txt_modules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/txt_modules"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
 
-    </HorizontalScrollView>
+                    </LinearLayout>
 
-    <TextView
-        android:id="@+id/titl_newesttask"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="@string/titl_newesttask"
-        android:textColor="@color/textMainColor"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollview" />
+                    <LinearLayout
+                        android:id="@+id/btn_mobilecategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_mobilecategory"
+                        android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_task"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titl_newesttask"
-        tools:listitem="@layout/item_list_task" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_mobilecategory" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/txt_mobilecategory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_modules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/txt_modules"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_uiuxcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_uiuxcategory"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_mobilecategory" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/txt_uiuxcategory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_modules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/txt_modules"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_diniyahcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_diniyahcategory"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_diniyahcategory" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/txt_diniyahcategory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_modules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/txt_modules"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_bkcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/bg_bkcategory"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_bkcategory" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:letterSpacing="0.1"
+                            android:text="@string/txt_bkcategory"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_modules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/txt_modules"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/titl_newesttask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/titl_newesttask"
+                android:textColor="@color/titleTextColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollview" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titl_newesttask"
+                tools:listitem="@layout/item_list_task" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

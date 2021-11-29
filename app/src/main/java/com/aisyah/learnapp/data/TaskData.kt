@@ -54,8 +54,8 @@ object TaskData {
                 "5. Desain harus rapih dan dapat dibaca"
     )
     private val img = intArrayOf(
-        R.drawable.web4,
-        R.drawable.uiux2,
+        R.drawable.web1,
+        R.drawable.uiux5,
         R.drawable.mobile4,
         R.drawable.diniyah4,
         R.drawable.diniyah2
@@ -68,6 +68,7 @@ object TaskData {
             task.img = img[position]
             task.category = category[position]
             task.title = title[position]
+            task.desc = desc[position]
             task.time = time[position]
             list.add(task)
         }

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.adapter.bk.ListBkAdapter
+import com.aisyah.learnapp.adapter.module.bk.ListBkAdapter
 import com.aisyah.learnapp.data.ModuleBkData
 import com.aisyah.learnapp.model.module.ModelModule
 import kotlinx.android.synthetic.main.activity_bk_list.*

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.adapter.uiux.ListUiuxAdapter
+import com.aisyah.learnapp.adapter.module.uiux.ListUiuxAdapter
 import com.aisyah.learnapp.data.ModuleUiuxData
 import com.aisyah.learnapp.model.module.ModelModule
 import kotlinx.android.synthetic.main.activity_uiux.*

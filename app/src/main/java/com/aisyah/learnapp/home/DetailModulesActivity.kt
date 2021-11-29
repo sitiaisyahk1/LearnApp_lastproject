@@ -16,7 +16,7 @@ class DetailModulesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_modules)
-        setSupportActionBar(toolbar_detail_web)
+        setSupportActionBar(toolbar_module)
 
         val module = intent.getParcelableExtra<ModelModule>(EXTRA_MODULE) as ModelModule
 

@@ -10,14 +10,17 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
         <!-- Customize your theme here. -->
 
     </style>
     
-    <color name="textMainColor">#092134</color>
-    <color name="cardMainColor">#F0F0F0</color>
+    <color name="titleTextColor">#092134</color>
+    <color name="descTextColor">#444444</color>
+    <color name="whiteTextColor">#FFFFFF</color>
+    <color name="cardMainColor">#FDFEFF</color>
     <color name="backgroundMainColor">#FFFFFF</color>
-    <color name="lineMainColor">#E9E9E9</color>
-    <color name="grayTextColor">#979797</color>
+    <color name="lineMainColor">#C6C6C6</color>
+    <color name="iconGrayColor">#676767</color>
+
 </resources>

@@ -20,7 +20,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="@dimen/_24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,18 +32,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/textsplash1"
-            android:textColor="@color/textMainColor"
-            android:textSize="12sp" />
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/_12sp" />
 
         <TextView
             android:id="@+id/txt_splash2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="@dimen/_4dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/textsplash2"
             android:textColor="#2F80ED"
-            android:textSize="12sp" />
+            android:textSize="@dimen/_12sp" />
 
     </LinearLayout>
 

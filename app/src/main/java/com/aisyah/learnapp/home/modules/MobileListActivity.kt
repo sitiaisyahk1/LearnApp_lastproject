@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.adapter.mobile.ListMobileAdapter
+import com.aisyah.learnapp.adapter.module.mobile.ListMobileAdapter
 import com.aisyah.learnapp.data.ModuleMobileData
 import com.aisyah.learnapp.model.module.ModelModule
 import kotlinx.android.synthetic.main.activity_mobile_list.*

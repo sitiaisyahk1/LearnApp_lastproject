@@ -44,6 +44,7 @@ class AccountFragment : Fragment() {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
         }
+
     }
 
 }

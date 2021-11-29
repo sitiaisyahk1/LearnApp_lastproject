@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_20dp"
-        android:background="@color/backgroundMainColor"
         app:cardCornerRadius="12dp"
         android:layout_marginStart="@dimen/_16dp"
         android:layout_marginEnd="@dimen/_16dp"
@@ -47,8 +46,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="ANDROID - FIRYAL"
-                android:textColor="@color/textMainColor"
+                android:textColor="@color/titleTextColor"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/iv_list_task"
                 app:layout_constraintTop_toTopOf="@+id/iv_list_task" />
@@ -59,8 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="26 Aug"
-                android:textColor="@color/grayTextColor"
+                android:textColor="@color/descTextColor"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -73,34 +70,10 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:letterSpacing="0.01"
                 android:maxLines="1"
-                android:text="Retrofit with Kotlin"
-                android:textColor="@color/textMainColor"
+                android:textColor="@color/titleTextColor"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_category_task"
                 app:layout_constraintTop_toBottomOf="@+id/tv_category_task" />
-
-            <!--            <ImageView-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="1dp"-->
-            <!--                android:layout_marginStart="16dp"-->
-            <!--                android:layout_marginTop="8dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:background="#EDEDED" />-->
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/tv_desc_web"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginStart="16dp"-->
-            <!--                android:layout_marginTop="8dp"-->
-            <!--                android:layout_marginEnd="16dp"-->
-            <!--                android:layout_marginBottom="16dp"-->
-            <!--                android:fontFamily="@font/montserrat_regular"-->
-            <!--                android:letterSpacing="0.02"-->
-            <!--                android:maxLines="2"-->
-            <!--                android:text="This module explains how to use a retrofit library that serves to process data."-->
-            <!--                android:textColor="#979797"-->
-            <!--                android:textSize="10sp" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -47,6 +47,26 @@
     <string name="titl_module">Android Development : Retrofit With Kotlin</string>
     <string name="imageview">imageview</string>
     <string name="titl_linkmodule">Link Module :</string>
+    <string name="search">search here</string>
+    <string name="edit_account">EDIT ACCOUNT</string>
+    <string name="setting">Setting</string>
+    <string name="about_app">About App</string>
+    <string name="bookmark_modules">Bookmark Modules</string>
+    <string name="favorite_students">Favorite Students</string>
+    <string name="enable_dark_mode">Enable dark mode</string>
+    <string name="log_out">Log Out</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="welcome_txt">Make sure you get login access from the admin</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="see_more">see more</string>
+    <string name="description">Description</string>
+    <string name="your_project">Your Project :</string>
+    <string name="like">LIKE</string>
+    <string name="appname">AweFun!</string>
+    <string name="assigment_task">ASSIGMENT TASK :</string>
+    <string name="desc">Description :</string>
 
     <string-array name="lable_web_modules">
         <item>WEB - FIRYAL</item>

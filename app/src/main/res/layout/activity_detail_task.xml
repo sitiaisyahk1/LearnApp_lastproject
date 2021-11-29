@@ -7,10 +7,9 @@
     tools:context=".home.task.DetailTaskActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_detail_web"
+        android:id="@+id/toolbar_task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cardMainColor"
         android:elevation="@dimen/_16dp"
         app:carbon_elevation="@dimen/_24dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,32 +18,31 @@
         app:navigationIcon="@drawable/ic_back"
         app:title="Assignment"
         app:titleTextAppearance="@style/ToolbarAppearance"
-        app:titleTextColor="@color/blackP" />
+        app:titleTextColor="@color/titleTextColor" />
 
     <TextView
         android:id="@+id/titl_listtask1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/_16dp"
         android:fontFamily="@font/montserrat_semi_bold"
-        android:text="ASSIGMENT TASK :"
-        android:textColor="@color/blackP"
-        android:textSize="18sp"
+        android:text="@string/assigment_task"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/_18sp"
         android:layout_marginTop="@dimen/_16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_detail_web" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_task" />
 
     <TextView
         android:id="@+id/tv_title_detailtask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginEnd="@dimen/_16dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Microblog Adab"
         android:textColor="@color/blue"
-        android:textSize="18dp"
+        android:textSize="@dimen/_18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titl_listtask1" />
@@ -56,19 +54,20 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
-        android:background="#EDEDED"
+        android:background="@color/lineMainColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_detailtask" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_detailtask"
+        android:contentDescription="@string/imageview" />
 
     <TextView
         android:id="@+id/titl_detailtask1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Description :"
+        android:layout_marginTop="@dimen/_12dp"
+        android:text="@string/desc"
         android:fontFamily="@font/montserrat_semi_bold"
-        android:textColor="@color/blackP"
+        android:textColor="@color/titleTextColor"
         android:letterSpacing="0.02"
         app:layout_constraintStart_toStartOf="@+id/titl_listtask1"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -77,12 +76,11 @@
         android:id="@+id/tv_desc_detailtask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginEnd="@dimen/_16dp"
         android:letterSpacing="0.03"
-        android:textColor="#979797"
+        android:textColor="@color/descTextColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titl_detailtask1" />
@@ -90,27 +88,23 @@
     <carbon.widget.ImageView
         android:id="@+id/img_detailtask1"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:background="#F1F1F1"
-        app:carbon_cornerRadius="12dp"
+        android:layout_height="@dimen/_170dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@color/cardMainColor"
+        app:carbon_cornerRadius="@dimen/_12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_desc_detailtask" />
 
     <com.meetsl.scardview.SCardView
         android:id="@+id/btn_upload_task"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#60FFFFFF"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        android:background="@color/cardMainColor"
         app:cardCornerRadius="8dp"
         app:cardCornerVisibility="noRightCorner"
-        app:cardElevation="12dp"
-        app:cardMaxElevation="2dp"
-        app:cardShadowEndColor="#50FFFFFF"
-        app:cardShadowStartColor="#50FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/img_detailtask1"
         app:layout_constraintEnd_toEndOf="@+id/img_detailtask1"
         app:layout_constraintStart_toStartOf="@+id/img_detailtask1"
@@ -121,7 +115,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_upload" />
+            android:src="@drawable/ic_upload"
+            android:contentDescription="@string/imageview" />
 
     </com.meetsl.scardview.SCardView>
 

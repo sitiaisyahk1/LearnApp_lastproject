@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".home.modules.UiuxListActivity">
 
     <LinearLayout
@@ -16,9 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_16dp"
-            app:cardElevation="8dp"
+            app:cardElevation="@dimen/_8dp"
             android:elevation="@dimen/_16dp"
-            app:cardCornerRadius="6dp"
+            app:cardCornerRadius="@dimen/_6dp"
             app:cardUseCornerArea="true">
 
             <LinearLayout
@@ -34,14 +35,14 @@
                     android:gravity="center"
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/montserrat_medium"
-                    android:hint="search here"
+                    android:hint="@string/search"
                     android:letterSpacing="0.02"
-                    android:textColorLink="@color/blackP"
-                    android:textColor="@color/blackP"
-                    android:textColorHighlight="@color/blackP"
-                    android:textColorHint="@color/unselected_icon"
-                    android:textSize="16sp"
-                    android:layout_marginBottom="8dp"
+                    android:textColorLink="@color/titleTextColor"
+                    android:textColor="@color/titleTextColor"
+                    android:textColorHighlight="@color/titleTextColor"
+                    android:textColorHint="@color/descTextColor"
+                    android:textSize="@dimen/_16sp"
+                    android:layout_marginBottom="@dimen/_8dp"
                     android:layout_weight="1"/>
 
                 <ImageButton
@@ -49,10 +50,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_12dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic_search" />
+                    android:src="@drawable/ic_search"
+                    android:contentDescription="@string/imagebutton" />
 
             </LinearLayout>
 

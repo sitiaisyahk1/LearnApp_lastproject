@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.adapter.diniyah
+package com.aisyah.learnapp.adapter.module.bk
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -12,7 +12,8 @@ import com.aisyah.learnapp.home.DetailModulesActivity
 import com.aisyah.learnapp.model.module.ModelModule
 import com.bumptech.glide.Glide
 
-class ListDiniyahAdapter(private val listDiniyah: ArrayList<ModelModule>) : RecyclerView.Adapter<ListDiniyahAdapter.ViewHolder>(){
+class ListBkAdapter(private val listBk: ArrayList<ModelModule>) : RecyclerView.Adapter<ListBkAdapter.ViewHolder>() {
+
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var image: ImageView = itemView.findViewById(R.id.iv_module)
@@ -22,29 +23,31 @@ class ListDiniyahAdapter(private val listDiniyah: ArrayList<ModelModule>) : Recy
         var tvDesc : TextView = itemView.findViewById(R.id.tv_desc_module)
 
     }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListDiniyahAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListBkAdapter.ViewHolder {
         val view : View = LayoutInflater.from(parent.context).inflate(R.layout.item_list_module, parent, false)
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ListDiniyahAdapter.ViewHolder, position: Int) {
-        val moduleDiniyah = listDiniyah[position]
-        Glide.with(holder.itemView.context).load(moduleDiniyah.img).into(holder.image)
+    override fun onBindViewHolder(holder: ListBkAdapter.ViewHolder, position: Int) {
+        val moduleBk = listBk[position]
+        Glide.with(holder.itemView.context).load(moduleBk.img).into(holder.image)
 
-        holder.tvLable.text = moduleDiniyah.lable
-        holder.tvTitle.text = moduleDiniyah.title
-        holder.tvDate.text = moduleDiniyah.date
-        holder.tvDesc.text = moduleDiniyah.description
+        holder.tvLable.text = moduleBk.lable
+        holder.tvTitle.text = moduleBk.title
+        holder.tvDate.text = moduleBk.date
+        holder.tvDesc.text = moduleBk.description
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, DetailModulesActivity::class.java)
-            intent.putExtra(DetailModulesActivity.EXTRA_MODULE, moduleDiniyah)
+            intent.putExtra(DetailModulesActivity.EXTRA_MODULE, moduleBk)
             it.context.startActivity(intent)
         }
     }
 
+
     override fun getItemCount(): Int {
-        return listDiniyah.size
+        return listBk.size
     }
 }
+
+

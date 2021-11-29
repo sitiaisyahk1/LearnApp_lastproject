@@ -1,4 +1,4 @@
-package com.aisyah.learnapp.adapter.mobile
+package com.aisyah.learnapp.adapter.module.mobile
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.adapter.mobile.ListMobileAdapter.ViewHolder
+import com.aisyah.learnapp.adapter.module.mobile.ListMobileAdapter.ViewHolder
 import com.aisyah.learnapp.home.DetailModulesActivity
 import com.aisyah.learnapp.model.module.ModelModule
 import com.bumptech.glide.Glide

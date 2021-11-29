@@ -8,16 +8,14 @@
     tools:context=".home.DetailModulesActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_task"
+        android:id="@+id/toolbar_module"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cardMainColor"
         android:elevation="@dimen/_16dp"
         app:carbon_elevation="@dimen/_24dp"
         app:navigationIcon="@drawable/ic_back"
         app:title="Detail Modules"
-        app:titleTextAppearance="@style/ToolbarAppearance"
-        app:titleTextColor="@color/blackP" />
+        app:titleTextColor="@color/titleTextColor" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -65,7 +63,7 @@
                 android:gravity="center"
                 android:text="@string/titl_label"
                 android:textAllCaps="true"
-                android:textColor="@color/white"
+                android:textColor="@color/whiteTextColor"
                 android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toEndOf="@+id/btn_bookmark"
                 app:layout_constraintTop_toBottomOf="@+id/iv_detail_module" />
@@ -75,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/titl_date"
-                android:textColor="#979797"
+                android:textColor="@color/descTextColor"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_category_module"
                 app:layout_constraintEnd_toEndOf="@+id/iv_detail_module"
                 app:layout_constraintTop_toTopOf="@+id/tv_category_module" />
@@ -90,7 +88,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:letterSpacing="0.01"
                 android:text="@string/titl_module"
-                android:textColor="@color/blackP"
+                android:textColor="@color/titleTextColor"
                 android:textSize="@dimen/_20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +101,7 @@
                 android:layout_marginStart="@dimen/_16dp"
                 android:layout_marginTop="@dimen/_14dp"
                 android:layout_marginEnd="@dimen/_16dp"
-                android:background="#EDEDED"
+                android:background="@color/lineMainColor"
                 android:contentDescription="@string/imageview"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +118,7 @@
                 android:justificationMode="inter_word"
                 android:letterSpacing="0.02"
                 android:lineSpacingExtra="@dimen/_3dp"
-                android:textColor="#979797"
+                android:textColor="@color/descTextColor"
                 android:textSize="@dimen/_11sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -147,7 +145,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:letterSpacing="0.02"
                 android:text="@string/titl_linkmodule"
-                android:textColor="@color/blackP"
+                android:textColor="@color/titleTextColor"
                 android:textSize="@dimen/_14sp"
                 app:layout_constraintStart_toStartOf="@+id/line2"
                 app:layout_constraintTop_toBottomOf="@+id/line2" />
@@ -185,7 +183,7 @@
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:linksClickable="true"
                 android:text="https://bit.ly/3kubKu4"
-                android:textColor="@color/blackP"
+                android:textColor="@color/titleTextColor"
                 android:textColorLink="@color/blackP"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/bg_link"

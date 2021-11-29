@@ -17,12 +17,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="@dimen/_24dp">
 
             <ImageView
                 android:id="@+id/img_profile"
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="@dimen/_160dp"
+                android:layout_height="@dimen/_160dp"
                 android:src="@drawable/img_profile"
                 android:layout_gravity="center"/>
 
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="@dimen/_20dp">
 
                 <TextView
                     android:id="@+id/tv_username"
@@ -41,9 +41,9 @@
                     android:text="Username"
                     android:fontFamily="@font/montserrat_bold"
                     android:textAlignment="center"
-                    android:textColor="@color/textMainColor"
+                    android:textColor="@color/titleTextColor"
                     android:letterSpacing="0.02"
-                    android:textSize="20sp"/>
+                    android:textSize="@dimen/_20sp"/>
 
                 <ImageButton
                     android:id="@+id/btn_point"
@@ -51,32 +51,32 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_point_home"
                     android:background="@android:color/transparent"
-                    android:layout_marginStart="12dp"/>
+                    android:layout_marginStart="@dimen/_12dp"/>
             </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_profiledesc"
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:textSize="13sp"
+                android:layout_height="@dimen/_65dp"
+                android:textSize="@dimen/_12sp"
                 android:text="Description"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginEnd="@dimen/_24dp"
                 android:textAlignment="center"
                 android:maxLines="3"
                 android:letterSpacing="0.02"
-                android:textColor="@color/grayTextColor"
+                android:textColor="@color/descTextColor"
                 android:fontFamily="@font/montserrat_medium"
                 android:layout_gravity="center"
-                android:layout_marginTop="18dp"/>
+                android:layout_marginTop="@dimen/_18dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your Project :"
                 android:fontFamily="@font/montserrat_semi_bold"
-                android:textSize="18sp"
-                android:textColor="@color/textMainColor"
+                android:textSize="@dimen/_18sp"
+                android:textColor="@color/titleTextColor"
                 android:layout_gravity="center"
                 android:letterSpacing="0.02"/>
 
@@ -86,79 +86,75 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="@dimen/_16dp">
 
                 <com.meetsl.scardview.SCardView
                     android:id="@+id/btn_github"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/_70dp"
+                    android:layout_height="@dimen/_70dp"
                     android:defaultFocusHighlightEnabled="true"
-                    app:cardBackgroundColor="@color/backgroundMainColor"
-                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/cardMainColor"
+                    app:cardCornerRadius="@dimen/_10dp"
                     app:cardCornerVisibility="none"
-                    app:cardElevation="5dp"
+                    app:cardElevation="@dimen/_5dp"
                     app:cardLightDirection="none"
                     app:cardPreventCornerOverlap="false"
-                    app:cardShadowEndColor="@color/backgroundMainColor"
-                    app:cardShadowStartColor="@color/backgroundMainColor"
                     app:cardUseCompatPadding="false"
                     app:cardUseCornerArea="false">
 
                     <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="@dimen/_35dp"
+                        android:layout_height="@dimen/_35dp"
                         android:layout_gravity="center"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/ic_github" />
+                        android:src="@drawable/ic_github"
+                        android:contentDescription="@string/imagebutton" />
 
                 </com.meetsl.scardview.SCardView>
 
                 <com.meetsl.scardview.SCardView
                     android:id="@+id/btn_linkedin"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/_70dp"
+                    android:layout_height="@dimen/_70dp"
                     android:defaultFocusHighlightEnabled="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    app:cardBackgroundColor="@color/backgroundMainColor"
-                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    app:cardBackgroundColor="@color/cardMainColor"
+                    app:cardCornerRadius="@dimen/_10dp"
                     app:cardCornerVisibility="none"
-                    app:cardElevation="5dp"
+                    app:cardElevation="@dimen/_5dp"
                     app:cardLightDirection="none"
                     app:cardPreventCornerOverlap="false"
-                    app:cardShadowEndColor="#0333B5E5"
-                    app:cardShadowStartColor="#E8E9EC"
                     app:cardUseCompatPadding="false"
                     app:cardUseCornerArea="false">
 
                     <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="@dimen/_35dp"
+                        android:layout_height="@dimen/_35dp"
                         android:layout_gravity="center"
                         android:background="@android:color/transparent"
-                        android:src="@drawable/ic_linkedin" />
+                        android:src="@drawable/ic_linkedin"
+                        android:contentDescription="@string/imagebutton" />
 
                 </com.meetsl.scardview.SCardView>
 
                 <com.meetsl.scardview.SCardView
                     android:id="@+id/btn_behance"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/_70dp"
+                    android:layout_height="@dimen/_70dp"
                     android:defaultFocusHighlightEnabled="true"
-                    app:cardBackgroundColor="@color/backgroundMainColor"
-                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="@color/cardMainColor"
+                    app:cardCornerRadius="@dimen/_10dp"
                     app:cardCornerVisibility="none"
-                    app:cardElevation="5dp"
+                    app:cardElevation="@dimen/_5dp"
                     app:cardLightDirection="none"
                     app:cardPreventCornerOverlap="false"
-                    app:cardShadowEndColor="#0333B5E5"
-                    app:cardShadowStartColor="#E8E9EC"
                     app:cardUseCompatPadding="false"
                     app:cardUseCornerArea="false">
 
                     <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="@dimen/_35dp"
+                        android:layout_height="@dimen/_35dp"
                         android:layout_gravity="center"
                         android:background="@android:color/transparent"
                         android:src="@drawable/ic_behance"
@@ -170,22 +166,22 @@
             <carbon.widget.TextView
                 android:id="@+id/btn_editprofile"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginBottom="24dp"
+                android:layout_height="@dimen/_44dp"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:layout_marginEnd="@dimen/_24dp"
+                android:layout_marginBottom="@dimen/_24dp"
                 android:background="@drawable/btn_bg"
-                android:elevation="15dp"
+                android:elevation="@dimen/_15dp"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:gravity="center"
                 android:letterSpacing="0.03"
                 android:shadowColor="@color/blue"
                 android:shadowRadius="100"
-                android:text="EDIT ACCOUNT"
+                android:text="@string/edit_account"
                 android:textColor="@color/white"
                 app:carbon_elevationSpotShadowColor="@color/blue"
-                app:elevation="20dp"/>
+                app:elevation="@dimen/_20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -193,34 +189,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="@dimen/_8dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Setting"
+                android:text="@string/setting"
                 android:fontFamily="@font/montserrat_semi_bold"
-                android:textSize="16sp"
-                android:textColor="@color/textMainColor"
+                android:textSize="@dimen/_16sp"
+                android:textColor="@color/titleTextColor"
                 android:letterSpacing="0.02"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cv2"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="8dp"
+                android:layout_height="@dimen/_230dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_8dp"
                 app:cardPreventCornerOverlap="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="@dimen/_14dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -230,104 +226,110 @@
                         android:orientation="horizontal">
 
                         <ImageButton
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:layout_marginStart="16dp"
+                            android:layout_width="@dimen/_24dp"
+                            android:layout_height="@dimen/_24dp"
+                            android:layout_marginStart="@dimen/_16dp"
                             android:background="@android:color/transparent"
-                            android:src="@drawable/ic_aboutapp" />
+                            android:src="@drawable/ic_aboutapp"
+                            android:contentDescription="@string/imagebutton" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="About App"
-                            android:textColor="@color/textMainColor"
-                            android:textSize="16sp" />
+                            android:text="@string/about_app"
+                            android:textColor="@color/titleTextColor"
+                            android:textSize="@dimen/_16sp" />
                     </LinearLayout>
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:background="@color/lineMainColor" />
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:background="@color/lineMainColor"
+                        android:contentDescription="@string/imageview" />
 
                     <LinearLayout
                         android:id="@+id/btn_bookmarkmodules"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="@dimen/_16dp"
                         android:orientation="horizontal">
 
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="@dimen/_16dp"
                             android:background="@android:color/transparent"
-                            android:src="@drawable/ic_bookmarkmodules" />
+                            android:src="@drawable/ic_bookmarkmodules"
+                            android:contentDescription="@string/imagebutton" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="Bookmark Modules"
-                            android:textColor="@color/textMainColor"
-                            android:textSize="16sp" />
+                            android:text="@string/bookmark_modules"
+                            android:textColor="@color/titleTextColor"
+                            android:textSize="@dimen/_16sp" />
                     </LinearLayout>
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:background="@color/lineMainColor" />
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:background="@color/lineMainColor"
+                        android:contentDescription="@string/imageview" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="@dimen/_16dp"
                         android:orientation="horizontal"
                         android:id="@+id/btn_favstudents">
 
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="@dimen/_16dp"
                             android:background="@android:color/transparent"
-                            android:src="@drawable/ic_favoritestudents" />
+                            android:src="@drawable/ic_favoritestudents"
+                            android:contentDescription="@string/imagebutton" />
 
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:layout_marginEnd="@dimen/_16dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="Favorite Students"
-                            android:textColor="@color/textMainColor"
-                            android:textSize="16sp" />
+                            android:text="@string/favorite_students"
+                            android:textColor="@color/titleTextColor"
+                            android:textSize="@dimen/_16sp" />
                     </LinearLayout>
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:background="@color/lineMainColor" />
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        android:background="@color/lineMainColor"
+                        android:contentDescription="@string/imageview" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginTop="@dimen/_16dp"
                         android:orientation="horizontal"
                         android:layout_marginStart="@dimen/_16dp"
                         android:id="@+id/btn_darkmode">
@@ -336,9 +338,8 @@
                             android:id="@+id/switch1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:text="Enable dark mode"
-                            android:textColor="@color/textMainColor"
+                            android:text="@string/enable_dark_mode"
+                            android:textColor="@color/titleTextColor"
                             android:fontFamily="@font/montserrat_medium"
                             android:drawablePadding="@dimen/_16dp"
                             tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -351,17 +352,18 @@
                 android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_24dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_40dp"
                 android:background="@color/backgroundMainColor"
                 android:fontFamily="@font/montserrat_semi_bold"
-                android:text="Log Out"
-                android:shadowColor="@color/blackP"
+                android:text="@string/log_out"
+                android:saveEnabled="true"
+                android:shadowColor="@color/titleTextColor"
                 android:textColor="@android:color/holo_red_light"
-                app:carbon_cornerRadius="8dp"
-                app:carbon_elevation="15dp"/>
+                app:carbon_cornerRadius="@dimen/_8dp"
+                app:carbon_elevation="@dimen/_15dp"/>
         </LinearLayout>
     </LinearLayout>
 
