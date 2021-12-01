@@ -17,6 +17,7 @@
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/btn_started.xml" value="0.21197916666666666" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/card_shadow.xml" value="0.290625" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/default_dot.xml" value="0.2911458333333333" />
+        <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic.xml" value="0.290625" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_aboutapp.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_back.xml" value="0.290625" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_behance.xml" value="0.2866666666666667" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_mobilecategory.xml" value="0.25" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_notification.xml" value="0.2685546875" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_password.xml" value="0.2518018018018018" />
+        <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_pause.xml" value="0.290625" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_point_home.xml" value="0.25462962962962965" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_point_list.xml" value="0.290625" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/drawable/ic_rank.xml" value="0.25" />
@@ -59,7 +61,7 @@
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout-v28/onboarding_slide1.xml" value="0.275" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_about_app.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_bk_list.xml" value="0.1" />
-        <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_detail_modules.xml" value="0.2" />
+        <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_detail_modules.xml" value="0.5483870967741935" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_detail_student.xml" value="0.24909420289855072" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_detail_task.xml" value="0.176" />
         <entry key="..\:/Users/sitia/AndroidStudioProjects/LearnApp/app/src/main/res/layout/activity_diniyah_list.xml" value="0.1" />

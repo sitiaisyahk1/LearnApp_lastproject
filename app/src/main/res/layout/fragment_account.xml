@@ -19,8 +19,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_24dp">
 
-            <ImageView
-                android:id="@+id/btn_profile"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfile"
                 android:layout_width="@dimen/_160dp"
                 android:layout_height="@dimen/_160dp"
                 android:src="@drawable/img_profile"

@@ -157,10 +157,8 @@
                 android:layout_marginStart="56dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="32dp"
                 android:background="#ECEFF1"
                 app:carbon_cornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/titl_linkmodule" />
@@ -182,13 +180,91 @@
                 android:autoLink="web"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:linksClickable="true"
-                android:text="https://bit.ly/3kubKu4"
                 android:textColor="@color/titleTextColor"
                 android:textColorLink="@color/blackP"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/bg_link"
                 app:layout_constraintStart_toStartOf="@+id/bg_link"
                 app:layout_constraintTop_toTopOf="@+id/bg_link" />
+
+            <TextView
+                android:id="@+id/seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_40dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="00"
+                android:textColor="@color/descTextColor"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bg_link" />
+
+            <TextView
+                android:id="@+id/batas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=":"
+                android:textColor="@color/descTextColor"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/seconds"
+                app:layout_constraintEnd_toStartOf="@+id/seconds"
+                app:layout_constraintTop_toTopOf="@+id/seconds" />
+
+            <TextView
+                android:id="@+id/minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="00"
+                android:textColor="@color/descTextColor"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/batas"
+                app:layout_constraintEnd_toStartOf="@+id/batas"
+                app:layout_constraintTop_toTopOf="@+id/batas" />
+
+            <TextView
+                android:id="@+id/batas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=":"
+                android:textColor="@color/descTextColor"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/minute"
+                app:layout_constraintEnd_toStartOf="@+id/minute"
+                app:layout_constraintTop_toTopOf="@+id/minute" />
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="00"
+                android:textColor="@color/descTextColor"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/batas2"
+                app:layout_constraintEnd_toStartOf="@+id/batas2"
+                app:layout_constraintTop_toTopOf="@+id/batas2" />
+
+
+            <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_play"
+                app:layout_constraintBottom_toBottomOf="@+id/seconds"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seconds"
+                android:contentDescription="@string/imagebutton" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
