@@ -5,6 +5,10 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:id="@+id/ll_profile"
         android:layout_width="match_parent"
@@ -17,6 +21,7 @@
             android:id="@+id/iv_detail_student"
             android:layout_width="@dimen/_160dp"
             android:layout_height="@dimen/_160dp"
+            android:layout_marginTop="@dimen/_24dp"
             android:src="@drawable/img_profile"
             android:layout_gravity="center"/>
 
@@ -130,6 +135,7 @@
                     android:layout_width="@dimen/_35dp"
                     android:layout_height="@dimen/_35dp"
                     android:layout_gravity="center"
+                    android:onClick="getUrlFromGithub"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_github"
                     android:contentDescription="@string/imagebutton" />
@@ -143,6 +149,7 @@
                 android:defaultFocusHighlightEnabled="true"
                 android:layout_marginStart="@dimen/_16dp"
                 android:layout_marginEnd="@dimen/_16dp"
+
                 app:cardBackgroundColor="@color/cardMainColor"
                 app:cardCornerRadius="@dimen/_10dp"
                 app:cardCornerVisibility="none"
@@ -156,6 +163,7 @@
                     android:layout_width="@dimen/_35dp"
                     android:layout_height="@dimen/_35dp"
                     android:layout_gravity="center"
+                    android:onClick="getUrlFromLinkedin"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_linkedin"
                     android:contentDescription="@string/imagebutton" />
@@ -180,6 +188,7 @@
                     android:layout_width="@dimen/_35dp"
                     android:layout_height="@dimen/_35dp"
                     android:layout_gravity="center"
+                    android:onClick="getUrlFromBehance"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_behance"
                     android:contentDescription="@string/imagebutton" />
@@ -209,9 +218,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24dp"
             android:src="@drawable/illust_profile_student"
             android:layout_gravity="center"
             android:contentDescription="@string/imageview" />
     </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

@@ -59,6 +59,11 @@ dependencies {
 
     api 'tk.zielony:carbon:0.17.0'
 
+    implementation ('com.github.dhaval2404:imagepicker:1.0'){
+        exclude group: 'com.github.yalantis', module: 'ucrop'
+    }
+    implementation 'com.yalantis:ucrop:2.2.0-native'
+
     //Design
     implementation 'androidx.cardview:cardview:1.0.0' //desain card
     implementation 'io.github.meetsl:SCardView:1.2'
@@ -92,7 +97,6 @@ dependencies {
     kapt 'com.google.dagger:hilt-android-compiler:2.39.1'
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
-
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2-native-mt'

@@ -67,6 +67,10 @@
     <string name="appname">AweFun!</string>
     <string name="assigment_task">ASSIGMENT TASK :</string>
     <string name="desc">Description :</string>
+    <string name="error_task_cancelled">Task Canceled</string>
+    <string name="error_failed_pick_gallery_image">Failed to pick gallery image</string>
+    <string name="image_picker_provider_authority_suffix">.imagepicker.provider.</string>
+    <string name="error_failed_to_compress_image">Error Failed to Compress Image</string>
 
     <string-array name="lable_web_modules">
         <item>WEB - FIRYAL</item>
