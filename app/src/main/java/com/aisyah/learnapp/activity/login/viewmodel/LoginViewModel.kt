@@ -34,7 +34,7 @@ class LoginViewModel(private val loginInteractor: LoginInteractor) : ViewModel()
 
     class LoginViewModelFactory(private val loginInteractor: LoginInteractor) :
         ViewModelProvider.NewInstanceFactory() {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
             return LoginViewModel(loginInteractor) as T
         }
     }

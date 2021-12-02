@@ -4,8 +4,12 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import android.widget.Button
+import androidx.core.content.ContextCompat
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.model.liststudent.ModelStudent
+import kotlinx.android.synthetic.main.activity_detail_modules.*
 import kotlinx.android.synthetic.main.activity_detail_student.*
 
 class DetailStudentActivity : AppCompatActivity() {
@@ -16,8 +20,7 @@ class DetailStudentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_student)
-
-
+        setSupportActionBar(toolbar_student)
 
         val student = intent.getParcelableExtra<ModelStudent>(DetailStudentActivity.EXTRA_STUDENT) as ModelStudent
 
@@ -46,5 +49,13 @@ class DetailStudentActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(url)
         startActivity(intent)
+    }
+
+    //toolbar
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> finish()
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

@@ -12,6 +12,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_uiux"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_16dp"
+            app:carbon_elevation="@dimen/_24dp"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="UI/UX Module"
+            app:titleTextAppearance="@style/ToolbarAppearance"
+            app:titleTextColor="@color/titleTextColor" />
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cv1"
             android:layout_width="match_parent"
@@ -32,7 +43,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:maxLines="1"
                     android:layout_marginStart="12dp"
                     android:fontFamily="@font/montserrat_medium"
                     android:hint="@string/search"

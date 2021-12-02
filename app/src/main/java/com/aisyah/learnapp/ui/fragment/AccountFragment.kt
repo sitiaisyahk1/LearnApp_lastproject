@@ -1,7 +1,9 @@
 package com.aisyah.learnapp.ui.fragment
 
 import android.app.Activity
+import android.content.Context.MODE_PRIVATE
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -47,20 +49,31 @@ class AccountFragment : Fragment() {
         }
 
         switch1.setOnCheckedChangeListener{ _, isChecked ->
-            if (isChecked) {
+            if (switch1.isChecked) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+
+                val editor: SharedPreferences.Editor = requireActivity().getSharedPreferences("DarkMode", MODE_PRIVATE).edit()
+                editor.putBoolean("DarkMode", true)
+                editor.apply()
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+                val editor: SharedPreferences.Editor = requireActivity().getSharedPreferences("DarkMode", MODE_PRIVATE).edit()
+                editor.putBoolean("DarkMode", false)
+                editor.apply()
             }
+
         }
+
+        val sharedPrefs: SharedPreferences = requireActivity().getSharedPreferences("DarkMode", MODE_PRIVATE)
+        switch1.setChecked(sharedPrefs.getBoolean("DarkMode", true))
 
         ivProfile.setOnClickListener {
             ImagePicker.with(this)
-                .compress(1024)			//Final image size will be less than 1 MB(Optional)
+                .compress(1024) //Final image size will be less than 1 MB(Optional)
                 .maxResultSize(1080, 1080)
                 .cropSquare()	//Final image resolution will be less than 1080 x 1080(Optional)
                 .start()
-
         }
 
         btn_logout.setOnClickListener {
@@ -70,6 +83,7 @@ class AccountFragment : Fragment() {
 
     }
 
+    //pick image
     private val startForProfileImageResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
             val resultCode = result.resultCode
@@ -87,7 +101,6 @@ class AccountFragment : Fragment() {
                 Toast.makeText(context, "Task Cancelled", Toast.LENGTH_SHORT).show()
             }
         }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

@@ -2,8 +2,22 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".student.DetailStudentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_16dp"
+        app:carbon_elevation="@dimen/_24dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Student Profile"
+        android:layout_gravity="center"
+        app:titleTextAppearance="@style/ToolbarAppearance"
+        app:titleTextColor="@color/titleTextColor" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,7 +35,7 @@
             android:id="@+id/iv_detail_student"
             android:layout_width="@dimen/_160dp"
             android:layout_height="@dimen/_160dp"
-            android:layout_marginTop="@dimen/_24dp"
+            android:layout_marginTop="@dimen/_80dp"
             android:src="@drawable/img_profile"
             android:layout_gravity="center"/>
 

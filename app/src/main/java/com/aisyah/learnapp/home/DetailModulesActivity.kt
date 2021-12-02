@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.model.module.ModelModule
 import kotlinx.android.synthetic.main.activity_detail_modules.*
@@ -56,6 +58,7 @@ class DetailModulesActivity : AppCompatActivity() {
         tv_link_module.text = module.linkModule
     }
 
+    //timer
     private fun bindViews() {
         hour = findViewById(R.id.hour)
         minute = findViewById(R.id.minute)
@@ -78,6 +81,7 @@ class DetailModulesActivity : AppCompatActivity() {
         handler = Handler()
     }
 
+    //timer
     var runnable: Runnable = object : Runnable {
 
         override fun run() {
@@ -111,6 +115,7 @@ class DetailModulesActivity : AppCompatActivity() {
 
     }
 
+    //toolbar
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> finish()

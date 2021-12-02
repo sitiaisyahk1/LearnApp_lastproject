@@ -343,7 +343,7 @@
                             android:textColor="@color/titleTextColor"
                             android:fontFamily="@font/montserrat_medium"
                             android:drawablePadding="@dimen/_16dp"
-                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+                            tools:ignore="UseSwitchCompatOrMaterialXml"/>
 
                     </LinearLayout>
                 </LinearLayout>

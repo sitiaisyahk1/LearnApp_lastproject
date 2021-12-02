@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".account.AboutAppActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_aboutapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_16dp"
+        app:carbon_elevation="@dimen/_24dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="About App"
+        app:titleTextAppearance="@style/ToolbarAppearance"
+        app:titleTextColor="@color/titleTextColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/titl_aboutapp"
@@ -13,10 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16dp"
-        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_16dp"
         android:layout_marginEnd="@dimen/_16dp"
         android:justificationMode="inter_word"
         android:letterSpacing="0.03"
         android:lineHeight="@dimen/_20dp"
         android:text="@string/titl_about_app"/>
-</ScrollView>
+
+    </ScrollView>
+</LinearLayout>
