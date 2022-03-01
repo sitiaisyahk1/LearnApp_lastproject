@@ -18,7 +18,9 @@
     <color name="descTextColor">#DBDBDB</color>
     <color name="whiteTextColor">#092134</color>
     <color name="cardMainColor">#33373D</color>
+    <color name="strokeColor">#0085FF</color>
     <color name="backgroundMainColor">#232D37</color>
     <color name="lineMainColor">#7C7C7C</color>
     <color name="iconGrayColor">#E2E2E2</color>
+    <color name="backgroundDetailColor">#232D37</color>
 </resources>

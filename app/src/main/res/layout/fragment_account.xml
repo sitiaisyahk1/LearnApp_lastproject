@@ -23,7 +23,7 @@
                 android:id="@+id/ivProfile"
                 android:layout_width="@dimen/_160dp"
                 android:layout_height="@dimen/_160dp"
-                android:src="@drawable/img_profile"
+                android:src="@drawable/ivprofile"
                 android:layout_gravity="center"
                 android:contentDescription="@string/imageview" />
 
@@ -39,7 +39,7 @@
                     android:id="@+id/tv_username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Username"
+                    android:text="@string/my_name"
                     android:fontFamily="@font/montserrat_bold"
                     android:textAlignment="center"
                     android:textColor="@color/titleTextColor"
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_65dp"
                 android:textSize="@dimen/_12sp"
-                android:text="Description"
+                android:text="@string/desc_profile"
                 android:layout_marginStart="@dimen/_24dp"
                 android:layout_marginEnd="@dimen/_24dp"
                 android:textAlignment="center"
@@ -357,12 +357,14 @@
                 android:layout_marginTop="@dimen/_24dp"
                 android:layout_marginEnd="@dimen/_16dp"
                 android:layout_marginBottom="@dimen/_40dp"
-                android:background="@color/backgroundMainColor"
+                android:background="@color/cardMainColor"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:text="@string/log_out"
                 android:saveEnabled="true"
                 android:shadowColor="@color/titleTextColor"
                 android:textColor="@android:color/holo_red_light"
+                app:carbon_stroke="@android:color/holo_red_light"
+                app:carbon_strokeWidth="2dp"
                 app:carbon_cornerRadius="@dimen/_8dp"
                 app:carbon_elevation="@dimen/_15dp"/>
         </LinearLayout>

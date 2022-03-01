@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".home.DetailModulesActivity">
+    tools:context=".home.modules.DetailModulesActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_module"
@@ -14,6 +14,7 @@
         android:elevation="@dimen/_16dp"
         app:carbon_elevation="@dimen/_24dp"
         app:navigationIcon="@drawable/ic_back"
+        android:text="Detail Modules"
         app:title="Detail Modules"
         app:titleTextColor="@color/titleTextColor" />
 
@@ -24,8 +25,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12dp">
+            android:layout_height="wrap_content">
 
             <carbon.widget.ImageView
                 android:id="@+id/iv_detail_module"
@@ -35,6 +35,7 @@
                 android:layout_marginEnd="@dimen/_16dp"
                 android:background="@drawable/imgw2"
                 android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/_12dp"
                 app:carbon_cornerRadius="@dimen/_15dp"
                 app:carbon_elevation="@dimen/_16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -157,7 +158,7 @@
                 android:layout_marginStart="56dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:background="#ECEFF1"
+                android:background="@color/backgroundDetailColor"
                 app:carbon_cornerRadius="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +182,6 @@
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:linksClickable="true"
                 android:textColor="@color/titleTextColor"
-                android:textColorLink="@color/blackP"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/bg_link"
                 app:layout_constraintStart_toStartOf="@+id/bg_link"
@@ -191,7 +191,7 @@
                 android:id="@+id/seconds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="@dimen/_32dp"
                 android:layout_marginEnd="@dimen/_16dp"
                 android:layout_marginBottom="@dimen/_40dp"
                 android:fontFamily="@font/montserrat_medium"

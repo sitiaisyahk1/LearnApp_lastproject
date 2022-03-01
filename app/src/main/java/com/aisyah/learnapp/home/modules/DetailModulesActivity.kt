@@ -1,22 +1,18 @@
-package com.aisyah.learnapp.home
+package com.aisyah.learnapp.home.modules
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.model.module.ModelModule
 import kotlinx.android.synthetic.main.activity_detail_modules.*
-import kotlinx.android.synthetic.main.activity_detail_student.*
-import kotlinx.android.synthetic.main.activity_detail_task.*
 
 class DetailModulesActivity : AppCompatActivity() {
-    companion object{
+    companion object {
         const val EXTRA_MODULE = "extra_module"
     }
 
@@ -36,7 +32,7 @@ class DetailModulesActivity : AppCompatActivity() {
     internal var Minutes: Int = 0
     internal var MilliSeconds: Int = 0
 
-    internal var flag:Boolean=false
+    internal var flag: Boolean = false
 
     var startButton: ImageButton? = null
 
@@ -66,15 +62,15 @@ class DetailModulesActivity : AppCompatActivity() {
 
 
         startButton?.setOnClickListener {
-            if (flag){
+            if (flag) {
                 handler?.removeCallbacks(runnable)
                 startButton?.setImageResource(R.drawable.ic_play)
-                flag=false
-            }else{
+                flag = false
+            } else {
                 startButton?.setImageResource(R.drawable.ic_reset)
                 StartTime = SystemClock.uptimeMillis()
                 handler?.postDelayed(runnable, 0)
-                flag=true
+                flag = true
             }
         }
 

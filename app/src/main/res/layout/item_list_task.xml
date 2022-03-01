@@ -65,13 +65,13 @@
 
             <TextView
                 android:id="@+id/tv_title_task"
-                android:layout_width="240dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_bold"
                 android:letterSpacing="0.01"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:textColor="@color/titleTextColor"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_category_task"
                 app:layout_constraintTop_toBottomOf="@+id/tv_category_task" />
 

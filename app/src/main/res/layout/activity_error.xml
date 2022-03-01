@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".error.ErrorActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosplash" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="@dimen/_300dp"
+        android:layout_marginTop="@dimen/_30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/illust_error" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="-0.05"
+        android:text="Sorry, the page you're looking for isn't available yet."
+        android:textAlignment="center"
+        android:textColor="@color/titleTextColor"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <carbon.widget.TextView
+        android:id="@+id/errorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginBottom="@dimen/_32dp"
+        android:background="@drawable/btn_bg"
+        android:elevation="@dimen/_15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:letterSpacing="0.03"
+        android:shadowColor="@color/blue"
+        android:shadowRadius="100"
+        android:text="Back to Page"
+        android:textColor="@color/white"
+        app:carbon_elevationSpotShadowColor="@color/blue"
+        app:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:letterSpacing="-0.05"
+        android:text="The app is still in the development stage, please be patient..."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

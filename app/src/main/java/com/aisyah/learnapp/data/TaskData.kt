@@ -20,11 +20,11 @@ object TaskData {
         "DINIYAH"
     )
     private val time = arrayOf(
-        "16 hours",
-        "24 hours",
-        "2 days",
-        "3 days",
-        "4 days"
+        "16h",
+        "24h",
+        "2d",
+        "3d",
+        "4d"
     )
     private val desc = arrayOf(
         "1. Terdapat teks bahasa Arab \n" +

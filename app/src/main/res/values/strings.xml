@@ -71,6 +71,8 @@
     <string name="error_failed_pick_gallery_image">Failed to pick gallery image</string>
     <string name="image_picker_provider_authority_suffix">.imagepicker.provider.</string>
     <string name="error_failed_to_compress_image">Error Failed to Compress Image</string>
+    <string name="my_name">Siti Aisyah K.H</string>
+    <string name="desc_profile">Hey, I\'m Junior UI/UX Designer and also Junior Android Developer. I love ui/ux so much. Please Support me to keeps Growing. Thank You,..</string>
 
     <string-array name="lable_web_modules">
         <item>WEB - FIRYAL</item>

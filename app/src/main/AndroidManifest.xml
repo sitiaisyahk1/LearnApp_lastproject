@@ -2,17 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aisyah.learnapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:configChanges="uiMode"
-        android:icon="@mipmap/ic_finallauncherapps"
+        android:icon="@mipmap/ic_finallauncherapps_round"
         android:label="@string/appname"
-        android:roundIcon="@mipmap/ic_finallauncherapps"
+        android:roundIcon="@mipmap/ic_finallauncherapps_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnApp">
+        <activity
+            android:name=".error.ErrorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.notification.NotificationActivity"
+            android:exported="true" />
         <activity
             android:name=".home.modules.DiniyahListActivity"
             android:exported="true" />
@@ -41,7 +47,7 @@
             android:name=".home.modules.WebListActivity"
             android:exported="true" />
         <activity
-            android:name=".home.DetailModulesActivity"
+            android:name=".home.modules.DetailModulesActivity"
             android:exported="true"
             android:theme="@style/Theme.LearnApp" />
         <activity

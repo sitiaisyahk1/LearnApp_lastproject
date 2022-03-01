@@ -1,5 +1,6 @@
 package com.aisyah.learnapp.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,8 @@ import com.aisyah.learnapp.adapter.student.ListBestStudentAdapter
 import com.aisyah.learnapp.adapter.student.ListTopStudentAdapter
 import com.aisyah.learnapp.data.BestStudentData
 import com.aisyah.learnapp.data.TopStudentData
+import com.aisyah.learnapp.error.ErrorActivity
+import com.aisyah.learnapp.home.modules.DiniyahListActivity
 import com.aisyah.learnapp.model.liststudent.ModelStudent
 import kotlinx.android.synthetic.main.fragment_student.*
 
@@ -28,9 +31,16 @@ class StudentFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        tv_more.setOnClickListener {
+            val intent = Intent(context, ErrorActivity::class.java)
+            startActivity(intent)
+        }
+
         initRecyclerViewBest()
 
         initRecyclerViewTop()
+
+
     }
 
     private fun initRecyclerViewBest() {

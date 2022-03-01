@@ -13,6 +13,7 @@ import com.aisyah.learnapp.R
 import com.aisyah.learnapp.adapter.task.ListTaskAdapter
 import com.aisyah.learnapp.data.TaskData
 import com.aisyah.learnapp.home.modules.*
+import com.aisyah.learnapp.home.notification.NotificationActivity
 import com.aisyah.learnapp.model.listtask.ModelTask
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -31,6 +32,11 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        btn_notification.setOnClickListener {
+            val intent = Intent(context, NotificationActivity::class.java)
+            startActivity(intent)
+        }
 
         btn_webcategory.setOnClickListener {
             val intent = Intent(context, WebListActivity::class.java)

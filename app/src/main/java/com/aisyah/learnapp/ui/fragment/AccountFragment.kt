@@ -18,6 +18,7 @@ import com.aisyah.learnapp.R
 import com.aisyah.learnapp.SplashScreen
 import com.aisyah.learnapp.account.AboutAppActivity
 import com.aisyah.learnapp.account.EditAccountActivity
+import com.aisyah.learnapp.error.ErrorActivity
 import com.github.dhaval2404.imagepicker.ImagePicker
 import kotlinx.android.synthetic.main.fragment_account.*
 
@@ -45,6 +46,16 @@ class AccountFragment : Fragment() {
 
         btn_aboutapp.setOnClickListener {
             val intent = Intent(context, AboutAppActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_bookmarkmodules.setOnClickListener {
+            val intent = Intent(context, ErrorActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_favstudents.setOnClickListener {
+            val intent = Intent(context, ErrorActivity::class.java)
             startActivity(intent)
         }
 

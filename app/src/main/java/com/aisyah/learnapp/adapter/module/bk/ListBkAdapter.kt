@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.aisyah.learnapp.R
-import com.aisyah.learnapp.home.DetailModulesActivity
+import com.aisyah.learnapp.home.modules.DetailModulesActivity
 import com.aisyah.learnapp.model.module.ModelModule
 import com.bumptech.glide.Glide
 
