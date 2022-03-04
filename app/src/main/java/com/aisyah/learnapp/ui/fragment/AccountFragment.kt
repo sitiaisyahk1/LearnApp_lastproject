@@ -40,7 +40,7 @@ class AccountFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btn_editprofile.setOnClickListener {
-            val intent = Intent(context, EditAccountActivity::class.java)
+            val intent = Intent(context, ErrorActivity::class.java)
             startActivity(intent)
         }
 

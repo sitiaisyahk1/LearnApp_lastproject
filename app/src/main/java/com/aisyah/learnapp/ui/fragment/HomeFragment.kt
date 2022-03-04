@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.aisyah.learnapp.R
 import com.aisyah.learnapp.adapter.task.ListTaskAdapter
 import com.aisyah.learnapp.data.TaskData
+import com.aisyah.learnapp.error.ErrorActivity
 import com.aisyah.learnapp.home.modules.*
 import com.aisyah.learnapp.home.notification.NotificationActivity
 import com.aisyah.learnapp.model.listtask.ModelTask
@@ -34,7 +35,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         btn_notification.setOnClickListener {
-            val intent = Intent(context, NotificationActivity::class.java)
+            val intent = Intent(context, ErrorActivity::class.java)
             startActivity(intent)
         }
 
